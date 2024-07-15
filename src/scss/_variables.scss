@@ -1,0 +1,42 @@
+:root {
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #f2f2f2;
+  --color-bg-tertiary: #212121;
+  --color-text-primary: #000;
+  --color-text-secondary: #666;
+  --color-text-tertiary: #fff;
+  --color-text-quaternary: #b3b3b3;
+  --color-text-quinary: #c6c7c8;
+  --color-primary-active: #69b42e;
+  --color-primary-hover: #80bf4d;
+  --color-icon-primary: #1a1a1a;
+  --color-border-primary: #cccccc;
+  --color-text-placeholder: #d9d9d9;
+  --color-link-primary: #69b42e;
+}
+
+/* Breakpoints ($breakpoint):
+- tablet-sm - 480px - 30em
+- tablet-lg - 768px - 48em
+- desktop - 1920px - 120em
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet-sm {
+    @media (min-width: 30em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-lg {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 120em) {
+      @content;
+    }
+  }
+}

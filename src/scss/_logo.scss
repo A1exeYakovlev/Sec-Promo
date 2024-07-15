@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  width: 17rem;
+  height: 3.172rem;
+
+  @include responsive(tablet-sm) {
+    width: 26.8rem;
+    height: 5rem;
+  }
+}

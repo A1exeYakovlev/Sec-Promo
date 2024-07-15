@@ -1,0 +1,83 @@
+.hero {
+  height: 100vh;
+  padding-top: 4.18rem;
+  margin-bottom: 2.4rem;
+
+  @include responsive(tablet-sm) {
+    padding-top: 4.8rem;
+    margin-bottom: 3.2rem;
+  }
+
+  @include responsive(tablet-lg) {
+    padding-top: 8.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  @include responsive(desktop) {
+    padding-top: 10.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    height: 100%;
+
+    @include responsive(tablet-lg) {
+      gap: 3.2rem;
+    }
+
+    @include responsive(tablet-lg) {
+      gap: 2rem;
+    }
+
+    @include responsive(desktop) {
+      gap: 6.2rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  &__title {
+    margin-top: 3.2rem;
+    text-align: center;
+
+    @include responsive(desktop) {
+      margin: 3.2rem -2rem 0 -2rem;
+    }
+
+    span {
+      display: block;
+      margin-top: 0.85rem;
+
+      @include responsive(desktop) {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+
+  &__buy-btn {
+    margin-top: 1.82rem;
+    width: 22.3rem;
+
+    @include responsive(tablet-sm) {
+      margin-top: 1rem;
+    }
+
+    @include responsive(tablet-lg) {
+      margin-top: 0rem;
+    }
+
+    @include responsive(desktop) {
+      margin-top: 3.2rem;
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.product {
+  &__container {
+    margin: 0 auto;
+    max-width: 114.1rem;
+
+    @include responsive(tablet-sm) {
+      padding: 0 1.6rem;
+    }
+
+    @include responsive(tablet-lg) {
+      padding: 0 3.2rem;
+    }
+
+    @include responsive(desktop) {
+      padding: 0 0.02rem;
+    }
+  }
+
+  &__inner {
+    padding: 4rem 1.2rem;
+    background-color: var(--color-icon-primary);
+
+    @include responsive(tablet-sm) {
+      padding: 6rem 2.4rem;
+      border-radius: 3.2rem;
+    }
+
+    @include responsive(tablet-lg) {
+      padding: 8rem 6.45rem;
+    }
+
+    @include responsive(desktop) {
+      padding: 8rem 10rem;
+      display: flex;
+      gap: 6.4rem;
+    }
+  }
+
+  &__about {
+    padding: 0 1.35rem;
+
+    @include responsive(tablet-sm) {
+      padding: 0;
+    }
+
+    @include responsive(desktop) {
+      padding: 11.05rem 0;
+    }
+  }
+
+  &__title {
+    margin-top: 3.1rem;
+  }
+
+  &__tags-wrap {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.2rem;
+  }
+
+  &__tag {
+    padding: 0.8rem 1.2rem;
+    border: 0.1rem solid var(--color-border-primary);
+    border-radius: 8rem;
+  }
+
+  &__descr {
+    margin-top: 1.18rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 3.1rem;
+    cursor: pointer;
+  }
+
+  &__cta {
+    margin-top: 3.93rem;
+    padding: 4rem 3.2rem;
+    border-radius: 1rem;
+    background-color: var(--color-bg-primary);
+
+    @include responsive(tablet-sm) {
+      margin: 5.93rem 1.6rem 0 1.6rem;
+    }
+
+    @include responsive(tablet-lg) {
+      margin: 7.943rem 10.35rem 0 10.35rem;
+    }
+
+    @include responsive(desktop) {
+      margin: 0;
+      flex: 1 0 36.78rem;
+      min-height: 49.8rem;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__cta-title {
+    margin-top: 2.35rem;
+  }
+
+  &__cta-subtitle {
+    margin-top: 0.8rem;
+  }
+
+  &__full-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+  }
+
+  &__full-price-val {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0.1rem;
+      bottom: 1rem;
+      width: 100%;
+      left: 0;
+      background-color: var(--color-text-quaternary);
+    }
+  }
+
+  &__disc-price {
+    margin-top: -0.1rem;
+  }
+
+  &__buy-btn {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  &__features {
+    margin-top: 2.4rem;
+    padding-bottom: 4.8rem;
+
+    @include responsive(tablet-sm) {
+      margin-top: 3.2rem;
+      padding-bottom: 4.8rem;
+    }
+
+    @include responsive(tablet-lg) {
+      margin-top: 4.09rem;
+      padding-bottom: 6.2rem;
+    }
+
+    @include responsive(desktop) {
+      margin-top: 6.4rem;
+      padding-bottom: 16.56rem;
+    }
+  }
+
+  &__features-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    @include responsive(tablet-sm) {
+      gap: 1.6rem;
+    }
+
+    @include responsive(tablet-lg) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.6rem;
+    }
+
+    @include responsive(desktop) {
+      gap: 3.2rem;
+    }
+  }
+
+  &__feature {
+    padding: 2.4rem 2.4rem 2.2rem 2.4rem;
+    background-color: var(--color-bg-secondary);
+    border-radius: 1.6rem;
+    position: relative;
+    min-height: 21rem;
+
+    @include responsive(tablet-sm) {
+      border-radius: 3.2rem;
+      padding: 3.2rem;
+      min-height: 32.8rem;
+    }
+
+    @include responsive(tablet-lg) {
+      min-height: 65.8rem;
+      flex: 1 1 0;
+    }
+
+    @include responsive(desktop) {
+      padding: 6.4rem;
+      min-height: 61.6rem;
+    }
+  }
+
+  &__feature-list {
+    position: absolute;
+    margin-top: 1.3rem;
+    z-index: 2;
+    list-style: none;
+  }
+
+  &__feature-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

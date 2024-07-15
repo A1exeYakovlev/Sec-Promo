@@ -1,0 +1,193 @@
+.headline1 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.3rem;
+  letter-spacing: -0.07rem;
+  color: var(--color-text-primary);
+
+  @include responsive(tablet-sm) {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: -0.1rem;
+  }
+
+  @include responsive(tablet-lg) {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.17rem;
+  }
+
+  @include responsive(desktop) {
+    font-size: 8.6rem;
+    line-height: 10.1rem;
+    letter-spacing: -0.3rem;
+  }
+
+  &--second-col {
+    color: var(--color-text-secondary);
+  }
+
+  &--md-fw {
+    font-weight: 500;
+  }
+
+  &--md-fz {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0;
+
+    @include responsive(tablet-sm) {
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+    }
+
+    @include responsive(desktop) {
+      font-size: 4rem;
+      line-height: 4.7rem;
+    }
+  }
+}
+
+.headline2 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--color-primary-active);
+  letter-spacing: -0.015rem;
+}
+
+.headline3 {
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  letter-spacing: -0.025rem;
+  color: var(--color-text-tertiary);
+
+  @include responsive(tablet-lg) {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  @include responsive(desktop) {
+    letter-spacing: -0.04rem;
+  }
+}
+
+.headline4 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: var(--color-text-primary);
+
+  &--tablet-sm {
+    @include responsive(tablet-sm) {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+  }
+}
+
+.headline5 {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  color: var(--color-text-primary);
+
+  @include responsive(tablet-sm) {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.025rem;
+  }
+
+  &--desktop-fz-lg {
+    @include responsive(desktop) {
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+    }
+  }
+}
+
+.text-placeholder {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: -0.01rem;
+  color: var(--color-text-placeholder);
+}
+
+.text {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: var(--color-text-tertiary);
+
+  @include responsive(tablet-lg) {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  &--second-col {
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color: var(--color-text-secondary);
+  }
+
+  &--desktop-fz-lg {
+    @include responsive(desktop) {
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+  }
+}
+
+.text-link {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: var(--color-link-primary);
+  text-decoration: underline;
+}
+
+.text2 {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--color-text-quaternary);
+}
+
+.text3 {
+  font-family: "Roboto";
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: var(--color-text-primary);
+}
+
+.text4 {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: var(--color-text-primary);
+  letter-spacing: 0.01rem;
+  letter-spacing: -0.001rem;
+
+  &--quinary-col {
+    color: var(--color-text-quinary);
+  }
+
+  &--ls-sm {
+    letter-spacing: -0.001rem;
+  }
+}

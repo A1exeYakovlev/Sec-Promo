@@ -1,0 +1,54 @@
+.disc-img {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+  }
+
+  &__discount {
+    position: absolute;
+    right: 4.8%;
+    top: 56%;
+    transform: translateY(-50%);
+    padding: 0.535rem 0.986rem;
+    border-radius: 0.784rem;
+    background-color: var(--color-primary-active);
+    color: var(--color-text-tertiary);
+    z-index: 3;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 2.423rem;
+    line-height: 2.8rem;
+
+    @include responsive(tablet-sm) {
+      font-size: 3.707rem;
+      line-height: 4.3rem;
+      padding: 0.819rem 1.509rem;
+      border-radius: 1.2rem;
+      right: 4%;
+      top: 55.3%;
+    }
+
+    @include responsive(tablet-lg) {
+      font-size: 4.615rem;
+      line-height: 5.4rem;
+      padding: 1.002rem 1.878rem;
+      border-radius: 2.254rem;
+      right: 6%;
+    }
+
+    @include responsive(desktop) {
+      font-size: 8.6rem;
+      line-height: 7rem;
+      padding: 3.57rem 2.89rem;
+      border-radius: 4.2rem;
+    }
+  }
+}
